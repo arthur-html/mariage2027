@@ -1,1 +1,135 @@
+:root {
+  --bg-main: #FBF4EE;
+  --bg-card: #EEECED;
+  --teal: #098B8E;
+  --red: #A32007;
+  --peach: #E7907C;
+  --blue: #304574;
+  --text: #304574;
+}
 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Worstveld Sting", sans-serif;
+  background: var(--bg-main);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+/* HEADER */
+header {
+  position: sticky;
+  top: 0;
+  background: rgba(251, 244, 238, 0.95);
+  backdrop-filter: blur(6px);
+  padding: 10px 16px;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  z-index: 10;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav img {
+  height: 40px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 16px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--blue);
+  padding-bottom: 3px;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-links a:hover {
+  border-bottom-color: var(--peach);
+}
+
+/* MAIN */
+main {
+  padding: 20px;
+  max-width: 700px;
+  margin: auto;
+}
+
+h1, h2 {
+  margin: 0 0 10px;
+  color: var(--blue);
+}
+
+.subtitle {
+  color: var(--teal);
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* HERO */
+.hero img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* CARDS */
+.card {
+  background: var(--bg-card);
+  padding: 18px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: var(--blue);
+  font-size: 1.1rem;
+}
+
+.card ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.tag {
+  display: inline-block;
+  background: rgba(9,139,142,0.1);
+  color: var(--teal);
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.85rem;
+  color: rgba(0,0,0,0.5);
+}
+
+footer a {
+  color: var(--red);
+  font-weight: bold;
+  text-decoration: none;
+}
