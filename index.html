@@ -2,70 +2,223 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Chloé & Arthur – Mariage</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Mariage Chloé & Arthur – 5 juin 2027</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    :root {
+      --bg-main: #FBF4EE;
+      --bg-card: #EEECED;
+      --teal: #098B8E;
+      --red: #A32007;
+      --peach: #E7907C;
+      --blue: #304574;
+      --text: #304574;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Worstveld Sting", "Ruzicka Freehand", sans-serif;
+      background: var(--bg-main);
+      color: var(--text);
+      line-height: 1.5;
+    }
+
+    /* HEADER MOBILE */
+    header {
+      position: sticky;
+      top: 0;
+      background: rgba(251, 244, 238, 0.95);
+      backdrop-filter: blur(6px);
+      padding: 10px 16px;
+      border-bottom: 1px solid rgba(0,0,0,0.1);
+      z-index: 10;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav img {
+      height: 40px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 16px;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--blue);
+      padding-bottom: 3px;
+      border-bottom: 2px solid transparent;
+    }
+
+    .nav-links a:hover {
+      border-bottom-color: var(--peach);
+    }
+
+    /* MAIN */
+    main {
+      padding: 20px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    h1, h2 {
+      margin: 0 0 10px;
+      color: var(--blue);
+    }
+
+    .subtitle {
+      color: var(--teal);
+      margin-bottom: 20px;
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    /* HERO */
+    .hero img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    }
+
+    /* CARDS */
+    .card {
+      background: var(--bg-card);
+      padding: 18px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.05);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: var(--blue);
+      font-size: 1.1rem;
+    }
+
+    .card ul {
+      padding-left: 20px;
+      margin: 0;
+    }
+
+    .tag {
+      display: inline-block;
+      background: rgba(9,139,142,0.1);
+      color: var(--teal);
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 10px;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.85rem;
+      color: rgba(0,0,0,0.5);
+    }
+  </style>
 </head>
+
 <body>
+
 <header>
-  <div class="nav-wrapper">
-    <div class="nav-logo">
-      <!-- Remplace "photo2.png" par ton fichier réel -->
-      <img src="photo2.png" alt="Guirlandes guinguette">
+  <div class="nav">
+    <img src="photo2.png" alt="Guirlande">
+    <div class="nav-links">
+      <a href="#accueil">Accueil</a>
+      <a href="#hebergement">Hébergement</a>
+      <a href="#infos">Infos pratiques</a>
     </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="hebergement.html">Hébergement</a></li>
-        <li><a href="infos.html">Infos pratiques</a></li>
-      </ul>
-    </nav>
   </div>
 </header>
 
 <main>
-  <section class="hero">
-    <div>
-      <h1 class="section-title">Chloé & Arthur</h1>
-      <p class="section-subtitle">Mariage – 5 juin 2027</p>
+
+  <!-- ACCUEIL -->
+  <section id="accueil">
+    <h1>Chloé & Arthur</h1>
+    <div class="subtitle">Mariage – 5 juin 2027</div>
+
+    <div class="hero">
+      <img src="photo1.png" alt="Illustration Chloé & Arthur">
     </div>
-    <!-- Remplace "photo1.png" par ton fichier réel -->
-    <img src="photo1.png" alt="Illustration Chloé & Arthur">
+
     <p>
-      Nous avons imaginé une journée simple, chaleureuse et joyeuse, dans une ambiance guinguette
-      qui nous ressemble. Nous avons hâte de partager ce moment avec vous.
+      Nous avons imaginé un week-end simple, chaleureux et joyeux, dans une ambiance guinguette
+      qui nous ressemble. Merci de réserver cette date pour venir célébrer avec nous.
     </p>
-  </section>
 
-  <section>
-    <h2 class="section-title">Programme du week-end</h2>
+    <h2>Programme</h2>
 
-    <div class="programme-block">
-      <h3>Samedi 5 juin 2027</h3>
+    <div class="card">
+      <span class="tag">Samedi 5 juin</span>
+      <h3>Journée du mariage</h3>
       <ul>
-        <li><strong>11h30 – Mairie du 1er arrondissement de Lyon</strong><br>
-          2 Pl. Sathonay, 69001 Lyon</li>
-        <li><strong>12h30 – Temps convivial autour d’un verre</strong><br>
-          Chez Marti, Pl. Gabriel Rambaud, 69001 Lyon</li>
-        <li><strong>À partir de 15h – Domaine du Petit Chambard</strong><br>
-          460 D66, 01480 Villeneuve</li>
-        <li>Activité suivie d’un vin d’honneur</li>
+        <li><strong>11h30 – Mairie du 1er arrondissement</strong><br>2 Pl. Sathonay, Lyon 1</li>
+        <li><strong>12h30 – Verre convivial</strong><br>Chez Marti, Pl. Gabriel Rambaud</li>
+        <li><strong>15h – Domaine du Petit Chambard</strong><br>Villeneuve</li>
+        <li>Activité</li>
+        <li>Vin d’honneur</li>
         <li>Repas</li>
         <li>Soirée jusqu’au bout de la nuit</li>
       </ul>
     </div>
 
-    <div class="programme-block">
-      <h3>Dimanche 6 juin 2027</h3>
+    <div class="card">
+      <span class="tag">Dimanche 6 juin</span>
+      <h3>Brunch des survivants</h3>
       <ul>
-        <li><strong>À partir de 11h – Brunch des survivants</strong><br>
-          Sur le domaine du Petit Chambard</li>
+        <li><strong>11h – Brunch</strong><br>Sur le domaine</li>
       </ul>
     </div>
   </section>
-</main>
 
-<footer>
-  &copy; 2027 – Mariage de Chloé & Arthur
-</footer>
-</body>
-</html>
+  <!-- HÉBERGEMENT -->
+  <section id="hebergement">
+    <h2>Hébergement</h2>
+    <div class="subtitle">Dormir sur place ou à proximité</div>
+
+    <div class="card">
+      <h3>Sur place</h3>
+      <ul>
+        <li>Couchages disponibles selon les places.</li>
+        <li>Merci de nous prévenir si vous souhaitez dormir sur place.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>En tente</h3>
+      <ul>
+        <li>Espace prévu pour les tentes.</li>
+        <li>Prévoir votre matériel.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>À proximité</h3>
+      <ul>
+        <li>Chambres d’hôtes</li>
+        <li>Petits hôtels</li>
+        <li>Airbnb autour de Villeneuve</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- INFOS PRATIQUES -->
+  <section id="infos">
+    <h2>Infos pratiques
